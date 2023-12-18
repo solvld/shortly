@@ -1,11 +1,13 @@
 import './App.scss'
+import Wrapper from './Components/Wrapper/Wrapper'
+import Header from './Components/Header/Header'
 
 function App() {
 
   return (
-		<div className="App">
-      <h1>Hello World</h1>
-    </div>
+		<Wrapper>
+      <Header />
+    </Wrapper>
 	)
 }
 
