@@ -3,6 +3,7 @@ import Header from './Components/Header/Header';
 import MainSection from './Components/MainSection/MainSection';
 import InputField from './Components/InputField/InputField';
 import LinksSection from './Components/LinksSection/LinksSection';
+import TestComp from './Components/TestComp';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <MainSection />
       </Wrapper>
       <LinksSection />
+      <TestComp />  
     </>
   );
 }
