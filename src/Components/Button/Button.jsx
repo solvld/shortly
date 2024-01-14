@@ -12,7 +12,7 @@ const Button = ({
 }) => {
   return (
 		<button
-			className={`px-5 py-1 text-lg cursor-pointer ${isUnFill && unFillStyle} ${
+			className={`px-5 py-1 min-w-fit text-lg cursor-pointer ${isUnFill && unFillStyle} ${
 				!isUnFill && 'text-white'
 			} bg-cyan ${roundBorder && roundBorderStyle} hover:opacity-75`}
 		>
