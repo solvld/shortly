@@ -5,13 +5,7 @@ const url = 'https://api.rebrandly.com/v1/links';
 
 //const newUrl = 'https://pythontutor.com/visualize.html#mode=edit';
 
-const renderResponse = (res) => {
-  if(res.errors){
-     console.log("Sorry, couldn't format your URL.Try again");
-  } else {  
-    return res.link
-  }
-}
+
 
 const shortenUrl = async () => {
   const urlToShorten = newUrl;
@@ -28,15 +22,15 @@ const shortenUrl = async () => {
     // add code here
     if (response.ok) {
       const jsonResponse = await response.json();
-      renderResponse(jsonResponse);
+      return jsonResponse.link;
     }
   } catch (error) {
     console.log(error);
   }
 };
 
-
-const apiKeyBitly = '8520db21dd4b4704fa4c81011fc352e32271c702';
+//https://app.bitly.com/Bo1ndWUGd2c/links?pendo=checklist-links документация APi
+const apiKeyBitly = '8520db21dd4b4704fa4c81011fc352e32271c702test';
 const urlBitly = 'https://api-ssl.bitly.com/v4/shorten'
 
 const shortenUrlBitly = async (newUrl) => {
@@ -57,7 +51,7 @@ const shortenUrlBitly = async (newUrl) => {
     if (response.ok) {
       const jsonResponse = await response.json();
       console.log(jsonResponse.link)
-      (jsonResponse.link);
+      return jsonResponse.link
     }
   } catch (error) {
     console.log(error);

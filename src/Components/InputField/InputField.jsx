@@ -14,7 +14,7 @@ function InputField({addLink}) {
     setText('');
   }
   return (
-    <form className="rounded-lg relative flex justify-center bg-very-dark-blue p-12 mb-6" onSubmit={handleSubmit}>
+    <form className="rounded-lg relative flex  justify-center bg-very-dark-blue  md:p-12 mb-6" onSubmit={handleSubmit}>
       <input
         className="p-2 rounded-lg mr-4 w-full"
         type="text"
